@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <meta name="description" content="A brief description" />
+    <meta name="author" content="your Site Name" />
+
+    <!-- Open Graph Protocol-->
+    <!--
+    <meta property="og:title" content="A brief description">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.mysite">
+    <meta property="og:description" content="A brief description">
+    <meta property="og:image" content="image.png">
+    <meta property="og:site_name" content="My Restaurnat">
+    -->
+
+    <!--
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    -->
+
+    <!-- Include your CSS  files here -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="row">
+          <form class="islemTipi">
+            <input
+              list="islemTipleri"
+              id="inputTipler"
+              name="myHouse"
+              placeholder="İslem Tipin Seçiniz"
+            />
+            <datalist id="islemTipleri">
+              <option value="AFN Çıkış Fatura"></option>
+              <option value="AFN Çıkış Tutanak"></option>
+              <option value="AFN Giriş Tahsilat"></option>
+              <option value="AFN Döviz"></option>
+              <option value="AFN Transfer"></option>
+            </datalist>
+          </form>
+        </div>
+        <div class="row">
+          <form class="afnCikisFatura">
+            <input
+              list="islemTürleri"
+              id="myHouse"
+              name="myHouse"
+              placeholder="type here..."
+            />
+            <datalist id="islemTürleri">
+              <option value="" id="islemTürleri2"></option>
+            </datalist>
+          </form>
+        </div>
+        <div class="row">
+          <button type="submit" id="uygulaHead">Uygula</button>
+        </div>
+      </div>
+    </header>
+    <nav>
+      <!-- Add your website navigation here-->
+    </nav>
+    <main>
+      <div class="container" style="display: block">
+        <div class="row">
+          <form>
+            <select name="list" id="list" accesskey="target">
+              <option value="none" selected>İşlem Tipini Seçiniz</option>
+              <option value="afncikis.html">AFN Çıkış</option>
+              <option value="afngiris.html">AFN Giriş</option>
+              <option value="afndöviz.html">AFN döviz</option>
+              <option value="afnisvansi.html">AFN İs Avansı</option>
+              <option value="afnisavansikapama.html">
+                AFN İs Avansı Kapama
+              </option>
+              <option value="afntransfer.html">AFN Transfer</option>
+            </select>
+            <input type="button" value="Go" onclick="goToNewPage()" />
+          </form>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <!-- Add copyright notices and other footer content here-->
+      <p></p>
+    </footer>
+
+    <!-- Include your JavaScript files here-->
+    <!-- jQuery (Bootstrap JS plugins depend on it) -->
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/ajax-utils.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

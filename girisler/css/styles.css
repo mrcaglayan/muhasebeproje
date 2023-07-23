@@ -1,0 +1,9 @@
+* {
+  box-sizing: border-box;
+  margin: 5px;
+  padding: 5px;
+}
+.container div {
+  margin: 10px auto;
+  width: 50%;
+}
